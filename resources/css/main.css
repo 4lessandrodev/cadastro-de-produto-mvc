@@ -1,0 +1,136 @@
+.background {
+  background-color: rgb(13, 13, 49);
+}
+
+.table {
+  background-color: rgb(38, 58, 105);
+  color: white;
+  margin: 2em 0 0 0;
+}
+
+#btn-novo-produto {
+  margin: 1em;
+}
+
+.cadastro {
+  background-color: rgb(255, 255, 255);
+  margin: 1em;
+  padding: 2em;
+  border-radius: 0.8em;
+  width: 90%;
+  position: fixed;
+  right: 1%;
+  z-index: 1;
+}
+
+.form_cadastro {
+  display: grid;
+  width: 90%;
+  margin: auto;
+}
+
+.btn-save {
+  margin: 1em 0;
+}
+
+.displayNone {
+  display: none;
+}
+
+.campo {
+  height: 2.2em;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 1em;
+}
+
+.campo-categoria {
+  height: 2.2em;
+  border-radius: 5px;
+}
+
+.fab {
+  display: none;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+  .fab {
+    display: inline-block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+  }
+
+  .fab button {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+    background-color: #cb60b3;
+    border: none;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
+    font-size: 24px;
+    color: white;
+
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+  }
+
+  .fab button:focus {
+    outline: none;
+  }
+
+  .fab button.main {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #5b19b7;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+  }
+
+  .fab button.main:before {
+    content: '+';
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 900px) {
+
+  .form_cadastro {
+    display: grid;
+    width: 80%;
+    margin: auto;
+  }
+
+  .cadastro {
+    background-color: rgb(255, 255, 255);
+    margin: 1em;
+    padding: 2em;
+    border-radius: 0.8em;
+    width: 40%;
+    position: fixed;
+    right: 30%;
+    z-index: 1;
+  }
+
+}

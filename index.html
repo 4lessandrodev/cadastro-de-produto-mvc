@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="resources/css/main.css">
+    <title>Document</title>
+  </head>
+
+  <body class="background produtoView">
+    <header class="nav justify-content-end  bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Pesquisar</button>
+            <input type="button" value="Novo Produto" class="btn btn-outline-primary" id="btn-novo-produto">
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+
+
+
+      <article class="cadastro displayNone" id="dialog">
+        <div class="nav justify-content-end">
+          <input type="button" class="btn btn-light" value="x" id="btn-close">
+        </div>
+        <h5>Cadastro de produto</h5>
+        <div>
+          <form class="form_cadastro">
+            <label for="descricao">Descrição</label>
+            <input type="text" name="descricao" id="descricao" class="campo data">
+            <label for="preco">Preço</label>
+            <input type="number" name="preco" id="preco" class="campo data" max="999" maxlength="3">
+            <label for="categoria">Categoria</label>
+            <select class="campo-categoria data" name="categoria">
+              <option value="1">Alimentos</option>
+              <option value="2">ELetrônicos</option>
+              <option value="3">Cama, Mesa e Banho</option>
+            </select>
+            <input type="button" value="Salvar" class="btn btn-primary btn-save">
+          </form>
+        </div>
+      </article>
+
+
+      <article>
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th>Descrição</th>
+              <th>Preço Und.</th>
+              <th>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categoria
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button" value="1">Alimentos</button>
+                    <button class="dropdown-item" type="button" value="2">ELetrônicos</button>
+                    <button class="dropdown-item" type="button" value="3">Cama, Mesa e Banho</button>
+                    <button class="dropdown-item" type="button" value="4">Todas</button>
+                  </div>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tfoot>
+            <th></th>
+            <th>200.00</th>
+            <th></th>
+          </tfoot>
+          <tbody>
+            <!--             <tr>
+              <td>row 1 col 1</td>
+              <td>row 1 col 2</td>
+              <td>row 1 col 2</td>
+            </tr>
+            <tr>
+              <td>row 2 col 1</td>
+              <td>row 2 col 2</td>
+              <td>row 2 col 2</td>
+            </tr> -->
+          </tbody>
+        </table>
+        <div class="fab" id="btn-flutuante">
+          <button class="main">
+          </button>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    </article>
+    <script src="resources/js/app.js" type="module"></script>
+  </body>
+
+</html>
